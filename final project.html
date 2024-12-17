@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.8;
+    background-color: #f9f9f9; 
+}
+header {
+    background-image: url('https://th.bing.com/th/id/OIP.kJEqKor6TW-WwkMOTRbPzQHaEK?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+header h1 {
+    font-size: 3.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #FFCDD2; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav a:hover {
+    background-color: #d4afcd;
+    color: #333;
+    border-radius: 5px;
+}
+section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+#home {
+    background-image: url('https://hanhsilk.giahanweb.com/wp-content/uploads/sites/273/2023/05/Thiet-ke-chua-co-ten-38.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+}
+#home h2 {
+    font-size: 2.8em;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+#home p {
+    font-size: 1.5em;
+    max-width: 900px;
+    margin: 20px auto; 
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+#products {
+    background-image: url(https://i.pinimg.com/originals/e6/14/67/e61467452a2dbe924e7c913d15292f21.jpg);
+    color: #333;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#about {
+    background-image: url('https://www.hikarimonogatari.com/wp-content/uploads/2018/06/41f2548ceed2657e076994ffad783b51_m-1024x683.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    border-radius: 15px;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffccf2; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#about p:last-child {
+    margin-bottom: 0;
+}
+#buy {
+background-color: #ffe6f0;
+    color: white;
+}
+#buy h2 {
+    font-size: 2.5em;
+    color: #a84893;
+}
+#buy .buy-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#order {
+    background-color: #ffe6f0; 
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#order h2 {
+    color: #a84893;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#order p {
+    text-align: center;
+    color: #555;
+}
+
+#order form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#order form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #333;
+}
+
+#order form input, 
+#order form textarea, 
+#order form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#order form button {
+    background-color: #a84893;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#order form button:hover {
+    background-color: #d48abf;
+}
+form {
+    background-color: #ffe6f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label {
+    font-size: 1em;
+    color: #a84893;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #a84893;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+form button:hover {
+    background-color: #d48abf;
+}
+footer {
+    background-color: #d48abf; 
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 1.1em;
+    }
+footer{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 3em;
+}
+    </style>
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Brand</title>
+    <header>
+        <h1>Pearl Brand</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about ">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#buy">Buy</a>
+        <a href="#order">Order</a>
+    </nav>
+    
+    <section id="home">
+        <h2>Home</h2>
+    <h2>Welcome to Pearl Brand</h2>
+    <p>Discover elegance, durability, and style in every stitch at Pearl Bags. We are passionate about crafting bags that suit every occasion—whether you're heading to work, traveling the world, or simply stepping out for a casual day. Our collection combines modern aesthetics with practical designs to meet the needs of everyone.</p>
+    <p>At Pearl Bags, we believe that a bag is more than just an accessory—it's a statement of who you are. With us, you’ll find timeless styles made from premium materials to ensure every bag becomes your trusted companion.</p>
+    <p>Explore our range and find the perfect match for your personality and lifestyle. Welcome to a world of style and functionality. Welcome to Pearl Bags.</p>
+    </section> 
+       <section id="About Us">
+   <section id="about">
+    <h2>About Us</h2>
+    <p>
+        In my page where style meets functionality. We take pride in crafting bags that are not only elegant but also practical for your everyday needs. From luxurious leather to eco-friendly materials, each Pearl Bag is designed with care and attention to detail.
+    </p>
+    <p>
+        Our mission is to empower individuals through fashion. Whether you're headed to work, an evening event, or a casual day out, Pearl Bags has the perfect accessory for you. Each design tells a story of sophistication and modernity.
+    </p>
+    <p>
+        At Pearl Bags, we believe in sustainability and quality. That’s why we source premium materials and ensure ethical craftsmanship. Join us in redefining style with our timeless collections.
+    </p>
+</section>
+<section id="products">
+    <h2>Bags</h2>
+    <p>Explore our wide range of bags, each crafted to match your unique needs and style:</p>
+    <div class="product-item">
+        <h3>Handbags</h3>
+        <p>Elegant and versatile handbags that elevate any outfit. Perfect for daily use or special occasions.</p>
+    </div>
+    <div class="product-item">
+        <h3>Backpacks</h3>
+        <p>Durable and spacious backpacks designed for travelers, students, and professionals.</p>
+    </div>
+    <div class="product-item">
+        <h3>Clutches</h3>
+        <p>Chic and compact clutches for evenings and parties. Small in size, big on style.</p>
+    </div>
+    <div class="product-item">
+        <h3>Tote Bags</h3>
+        <p>Roomy and stylish totes perfect for shopping trips or a busy day out.</p>
+    </div>
+</section>
+
+
+
+<section id="buy">
+    <h2>Ready to Own a Pearl Bag?</h2>
+    <p>Find the bag that speaks to you from our extensive collection. At Pearl Bags, we make shopping simple and enjoyable. Browse through our designs, select your favorites, and experience a seamless checkout process.</p>
+    <p>We also offer exclusive deals and discounts to make your purchase even more special. Rest assured, all our products come with a satisfaction guarantee and prompt delivery service.</p>
+    <p>Click below to start shopping now and elevate your style with Pearl Bags!</p>
+        <a href="#order">Shop Now</a>
+</section>
+
+<section id="order">
+    <h2>Order Your Pearl Bag</h2>
+    <p>Complete the form below to place your order for the perfect bag!</p>
+    <form action="thank-you-message" method="post">
+        <label for="bag-name">Bag Name/Type:</label><br>
+        <input type="text" id="bag-name" name="bag-name" placeholder="Enter the bag name or type" required><br><br>
+
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+        <label for="address">Shipping Address:</label><br>
+        <textarea id="address" name="address" placeholder="Enter your full address" rows="4" required></textarea><br><br>
+
+        <button type="submit">Submit Order</button>
+
+    </form>
+</section>
+    <footer>
+        <p>Made by Setara Rasouli</p>
+    </footer>
+    <footer>
+    <p>Follow us: 
+        <a href="https://www.instagram.com/afg_pearlcollection?igsh=ZDVvbDN3N2U3ODcw" target="_blank" style="color: white; text-decoration: none;">Instagram</a>
+        <a herf="https://www.facebook.com/share/HcrX5uf9ZjwEmu8F/?mibextid=wwXIfr"  target="_blank" style="color: white; text-decoration: none;">Facebook</a>
+    </p>
+    </footer>
+</body>
+</html>
